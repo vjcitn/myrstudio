@@ -1,6 +1,7 @@
 {
   "name": "RStudio Server in Codespaces",
   "image": "rocker/tidyverse:latest",
+  "postStartCommand": "sudo rstudio-server start",
   "appPort": [8787],
   "portsAttributes": {
     "8787": {
