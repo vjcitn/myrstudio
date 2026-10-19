@@ -1,0 +1,19 @@
+{
+  "name": "RStudio Server in Codespaces",
+  "image": "rocker/tidyverse:latest",
+  "appPort": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "RStudio",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",
+        "quarto.quarto"
+      ]
+    }
+  }
+}
